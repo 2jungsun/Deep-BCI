@@ -62,7 +62,7 @@ for i=1:kfold
   Afold(i,1)=100*sum(diag(con))/sum(con(:));
 end
 % Average accuracy over k-folds 
-Acc=mean(Afold); 
+Acc = mean(Afold); 
 % Store result
 LSTM.fold=Afold; LSTM.acc=Acc; LSTM.con=confmat; 
 fprintf('\n classification Accuracy (LSTM): %g %% \n ',Acc);
