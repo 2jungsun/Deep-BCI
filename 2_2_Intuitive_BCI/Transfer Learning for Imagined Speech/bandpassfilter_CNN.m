@@ -1,6 +1,6 @@
 
-for i=1:size(eeg,3)
-    e(:,:,1,i) = bandpass(eeg(:,:,i),[30 45], 1024); %gamma
+for k=1:size(eeg,3)
+    e(:,:,1,k) = bandpass(eeg(:,:,k),[30 45], 1024); %gamma
 end
 
 %%
